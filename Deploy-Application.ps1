@@ -142,7 +142,7 @@ Try {
 
 		## <Perform Installation tasks here>
 		$exitCode = Execute-MSI -Path "$dirFiles\vba71.msi" -Action Install -PassThru
-        If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
+    	If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
 
 		##*===============================================
 		##* POST-INSTALLATION
